@@ -1,6 +1,6 @@
 {
 	"name": "@th3s4mur41/config-release",
-	"version": "1.0.0",
+	"version": "0.0.1",
 	"license": "LICENSE",
 	"files": [
 		".releaserc.json"
