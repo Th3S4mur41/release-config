@@ -10,7 +10,6 @@ jobs:
   release:
     name: '🏷️ Release'
     runs-on: ubuntu-latest
-    container: node
     environment:
       name: production
       url: https://github.com/${{ github.repository }}/releases/tag/v${{ steps.release.outputs.version }}

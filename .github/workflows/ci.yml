@@ -12,7 +12,6 @@ jobs:
   lint:
     name: '🕵️‍♂️ Lint'
     runs-on: ubuntu-latest
-    container: node
 
     steps:
       - uses: actions/checkout@v2
