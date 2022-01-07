@@ -15,6 +15,7 @@
 		"registry": "https://npm.pkg.github.com"
 	},
 	"scripts": {
+		"format": "prettier --write --ignore-unknown .",
 		"lint": "npm run lint:style",
 		"lint:style": "prettier --check --ignore-unknown .",
 		"prepare": "husky install",
