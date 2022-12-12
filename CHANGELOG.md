@@ -1,3 +1,10 @@
+## [1.1.0](https://github.com/Th3S4mur41/config-release/compare/v1.0.0...v1.1.0) (2022-12-12)
+
+
+### Features
+
+* trigger release for dependencies updates ([9751d55](https://github.com/Th3S4mur41/config-release/commit/9751d55708dc80ad1cac203eb31aabc2f2fa65b6))
+
 # 1.0.0 (2022-01-07)
 
 
