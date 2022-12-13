@@ -1,3 +1,10 @@
+## [2.0.1](https://github.com/Th3S4mur41/release-config/compare/v2.0.0...v2.0.1) (2022-12-13)
+
+
+### Bug Fixes
+
+* lockfile out of sync ([502684e](https://github.com/Th3S4mur41/release-config/commit/502684e5b74a4139d2e5bf110bedebb8e1084e11))
+
 ## [2.0.0](https://github.com/Th3S4mur41/release-config/compare/v1.1.0...v2.0.0) (2022-12-13)
 
 
