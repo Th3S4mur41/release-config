@@ -1,0 +1,32 @@
+# This is workflow runs on push
+#
+name: Release
+
+# Controls when the action will run.
+on:
+  # Trigger workflow for pull requests.
+  push:
+    branches: [main, next, beta, alpha]
+
+jobs:
+  cancel-runs:
+    name: '▶️ actions'
+    uses: ./.github/workflows/cancel-workflow.yml
+
+  lint-code:
+    name: '▶️ actions'
+    needs: [cancel-runs]
+    uses: ./.github/workflows/lint-code.yml
+
+  codeql:
+    name: '▶️ actions'
+    needs: [cancel-runs]
+    uses: ./.github/workflows/codeql.yml
+
+  release:
+    name: '▶️ actions'
+    needs: [lint-code, codeql]
+    uses: ./.github/workflows/release.yml
+    secrets:
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN  }}
+      GH_TOKEN: ${{ secrets.GH_TOKEN  }}
