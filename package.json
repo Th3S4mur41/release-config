@@ -20,6 +20,9 @@
 		"type": "git",
 		"url": "https://github.com/Th3S4mur41/release-config.git"
 	},
+	"publishConfig": {
+		"access": "public"
+	},
 	"funding": "https://github.com/sponsors/Th3S4mur41",
 	"scripts": {
 		"format": "prettier --write --ignore-unknown .",
