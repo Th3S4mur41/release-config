@@ -1,3 +1,10 @@
+## [2.0.2](https://github.com/Th3S4mur41/release-config/compare/v2.0.1...v2.0.2) (2022-12-13)
+
+
+### Bug Fixes
+
+* add scope to package name ([98863c6](https://github.com/Th3S4mur41/release-config/commit/98863c622412cef3c0cdea6c3d0ec8190123944f))
+
 ## [2.0.1](https://github.com/Th3S4mur41/release-config/compare/v2.0.0...v2.0.1) (2022-12-13)
 
 
