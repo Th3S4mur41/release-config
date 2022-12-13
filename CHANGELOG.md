@@ -1,3 +1,10 @@
+## [2.0.3](https://github.com/Th3S4mur41/release-config/compare/v2.0.2...v2.0.3) (2022-12-13)
+
+
+### Bug Fixes
+
+* set public access to package ([fcccad9](https://github.com/Th3S4mur41/release-config/commit/fcccad982e8a131169c355087828151f74e06cc8))
+
 ## [2.0.2](https://github.com/Th3S4mur41/release-config/compare/v2.0.1...v2.0.2) (2022-12-13)
 
 
