@@ -1,5 +1,5 @@
 {
-	"name": "release-config",
+	"name": "@th3s4mur41/release-config",
 	"description": "A configuration for semantic-release that will create patches for dependencies updates",
 	"keywords": [
 		"release",
