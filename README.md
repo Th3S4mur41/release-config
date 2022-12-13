@@ -4,7 +4,7 @@
 
 ![Package version](https://img.shields.io/github/package-json/v/Th3S4mur41/release-config)
 ![GitHub last commit](https://img.shields.io/github/last-commit/Th3S4mur41/release-config)
-![Release](https://github.com/Th3S4mur41/release-config/actions/workflows/release.yml/badge.svg?branch=main)
+![Release](https://github.com/Th3S4mur41/release-config/actions/workflows/on_push.yml/badge.svg?branch=main)
 
 A configuration for semantic-release that will create patches for dependencies updates
 
@@ -38,16 +38,14 @@ A package.json file is created
 
 ## Installation
 
+```
 npm install @th3S4mur41/release-config
-
 ```
 
 or
 
 ```
-
 yarn add @th3S4mur41/release-config
-
 ```
 
 ## Usage
@@ -55,12 +53,9 @@ yarn add @th3S4mur41/release-config
 Add a `.releaserc.json` file to the root of your project with the following content:
 
 ```
-
 {
 "extends": "@th3S4mur41/release-config"
 }
-
 ```
 
 Done, now you can release your project automatically by running `npx semantic-release`
-```
