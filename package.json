@@ -32,7 +32,7 @@
 		"release": "npx semantic-release"
 	},
 	"peerDependencies": {
-		"semantic-release": "^18.0.0"
+		"semantic-release": ">=21"
 	},
 	"dependencies": {
 		"@semantic-release/changelog": "^6.0.2",
