@@ -1,3 +1,12 @@
+## [2.0.4](https://github.com/Th3S4mur41/release-config/compare/v2.0.3...v2.0.4) (2023-04-21)
+
+
+### Dependencies and Other Build Updates
+
+* **deps:** bump semantic release from 18 to 21 ([ba18bb6](https://github.com/Th3S4mur41/release-config/commit/ba18bb6462207f534a5edb722a5469be80c1bec0))
+* fix lockfile out of sync ([11022c5](https://github.com/Th3S4mur41/release-config/commit/11022c501309d655312e398280e65550cc357d87))
+* fix lockfile out of sync ([80e3912](https://github.com/Th3S4mur41/release-config/commit/80e3912d39f1daf74d4159558e910648298a3243))
+
 ## [2.0.3](https://github.com/Th3S4mur41/release-config/compare/v2.0.2...v2.0.3) (2022-12-13)
 
 
