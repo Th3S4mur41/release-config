@@ -41,7 +41,7 @@
 	"devDependencies": {
 		"@commitlint/cli": "^18.0.0",
 		"@commitlint/config-conventional": "^18.0.0",
-		"husky": "^8.0.2",
+		"husky": "^9.0.6",
 		"prettier": "^3.0.0",
 		"pretty-quick": "^4.0.0"
 	}
