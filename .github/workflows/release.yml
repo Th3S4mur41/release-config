@@ -16,7 +16,7 @@ on:
 
 permissions:
   contents: write
-  id-token: write  # Required for npmjs OIDC
+  id-token: write # Required for npmjs OIDC
   issues: write
   pull-requests: write
 
@@ -64,7 +64,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_TOKEN: ${{ secrets.GH_TOKEN || secrets.GITHUB_TOKEN }} # Needed to push to GitHub
           # NPM_TOKEN: ${{ secrets.NPM_TOKEN }} # Needed to publish to NPM registry
-          NPM_CONFIG_PROVENANCE: true  # 🧾 Enables provenance metadata for NPMJS authentication
+          NPM_CONFIG_PROVENANCE: true # 🧾 Enables provenance metadata for NPMJS authentication
           HUSKY: 0 # disable pre-commit hooks
         run: |
           npm run release
