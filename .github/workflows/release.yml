@@ -45,6 +45,7 @@ jobs:
           node-version-file: '.nvmrc'
           check-latest: true
           cache: 'npm'
+          registry-url: 'https://registry.npmjs.org' # must set registry-url manually to trigger OIDC token generation
 
       - name: '⛓️ Install dependencies'
         env:
