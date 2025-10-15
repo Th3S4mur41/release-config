@@ -47,6 +47,25 @@ jobs:
           cache: 'npm'
           registry-url: 'https://registry.npmjs.org' # must set registry-url manually to trigger OIDC token generation
 
+      # Temporary workaround: OIDC provenance requires npm CLI >= 11.5.1.
+      # Simplified: only check the major version; Node 22 ships npm 9 (will upgrade), Node 24 LTS will ship npm 11+ (no upgrade).
+      # Remove once Node.js 24 becomes LTS.
+      - name: '⬆️ Ensure npm major >= 11'
+        shell: bash
+        run: |
+          set -euo pipefail
+          required_major=11
+          current=$(npm --version)
+          IFS='.' read -r major _minor _patch <<< "$current"
+          if (( major < required_major )); then
+            echo "Current npm version $current has major < $required_major. Upgrading to latest..."
+            npm install -g npm@latest
+            echo "Upgraded npm to $(npm --version)"
+          else
+            echo "npm version $current already has major >= $required_major; no upgrade needed."
+            echo "::warning::Deprecation notice: npm upgrade step can be removed. Runner npm $current (>= $required_major). Remove '⬆️ Ensure npm major >= 11' once Node 24 LTS is broadly available."
+          fi
+
       - name: '⛓️ Install dependencies'
         env:
           HUSKY: 0
