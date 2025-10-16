@@ -46,6 +46,7 @@ jobs:
           node-version: '24' # TODO: restore node-version-file when node 24 becomes LTS
           check-latest: true
           cache: 'npm'
+          registry-url: 'https://registry.npmjs.org'
 
       - name: '⛓️ Install dependencies'
         env:
