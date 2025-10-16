@@ -29,7 +29,7 @@
 		"lint": "npm run lint:style",
 		"lint:style": "prettier --check --ignore-unknown .",
 		"prepare": "husky install",
-		"release": "npx semantic-release"
+		"release": "npx semantic-release@beta"
 	},
 	"peerDependencies": {
 		"semantic-release": ">=21"
